@@ -21,19 +21,17 @@ h5 {
 	font-weight: bold;
 }
 
-.row {
+.footer-row {
 	margin:3px;
 }
 
-#row {
+.nav-row {
 	background-color: #5caba4;
 }
 
 .navbar {
 	padding:10px;
 	width: 100%;
-
-
 }
 
 .nav {
@@ -41,22 +39,25 @@ h5 {
 	padding-left: 25px;
 	padding-top:10px;	
 	padding-bottom:10px;
-	font-family:comfortaa;
+
+	font-family: comfortaa;
 	color:black;
 	font-size:15px;
 	text-align: center;
 	background-color:#5caba4;
-	color:black;
-/*	width:50px;
-*/}
+	text-decoration: none;
+
+	transition: 0.25s;
+}
 
 .nav:hover {
 	background-color:rgb(222, 168, 33);
-	text-decoration:none;
 	font-weight: bold;
 	color:white;
 	font-size:16px;
-	font-weight: bold;
+	text-decoration: none;
+
+	transition: 0.25s;
 }
 
 .intro {
@@ -64,10 +65,15 @@ h5 {
 }
 
 .updates {
-/*	background-color:#f3f5f9;
-*/	padding:10px;
+	background-color:#f3f5f9;
+	padding:10px;
 	text-align:center;
 	background-color: rgb(240, 240, 240);
+}
+
+.article {
+	text-decoration: none !important;
+	color: black !important;
 }
 
 h2{
@@ -90,9 +96,9 @@ p {
 	p {
 		font-size: 10px;
 	}	
-	.left-img {
-		height: 150px;
-		width: 150px;
+	.left-img, .right-img {
+		max-height: 150px;
+		max-width: 150px;
 	}
 	.footer {
 		font-size: 10px;
@@ -116,29 +122,27 @@ p {
 }
 
 .left-img {
-	height:300px;
-	width:300px;
+	max-height:300px;
+	max-width:300px;
 	background: orange;
 	margin-right:20px;
 
 }
 
 .right-img {
-	height:300px;
-	width:300px;
+	max-height:300px;
+	max-width:300px;
 	background:orange;
 	margin-left:20px;
 }
 
 .left-title {
 	text-align: left;
-	margin: ;
 }
 
 .title-text {
 	background-color:none;
 	padding: 10px;
-	width: %;
 	height: 300px;
 	text-decoration: none;
 	color:black;

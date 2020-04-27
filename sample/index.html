@@ -261,6 +261,12 @@ async function articleSetup() {
 	}
 }
 
+setTimeout(function () {
+	if (document.getElementById("articles-loading").style.display != "none") {
+		document.getElementById("loading-msg").innerText = "We're having trouble loading the GDocs API at the moment. Please try again later.";
+	}
+}, 30000)
+
 </script>
 
 <script async="true" defer="true" onload="this.onload=function(){};handleClientLoad();" onreadystatechange="if (this.readyState === 'complete') this.onload()" src="https://apis.google.com/js/api.js"></script>
